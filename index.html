@@ -22,7 +22,7 @@
           <div class="jumbotron jumbotron-fluid ">
             <div class="container">
               <h1 class="display-3">Emmanuel Pangan</h1>
-              <p class="lead">Backend developer by day 🌞 game developer by night 🌜</p>
+              <p id="subtitleText" class="lead">Backend developer by day 🌞 game developer by night 🌜</p>
               <div class="d-flex justify-content-end">
                 <a data-toggle="collapse" href="#aboutCollapse" aria-controls="aboutCollapse" class="text-muted mr-2">Read more...</a>
               </div>
@@ -30,10 +30,10 @@
               <!-- ABOUT -->
               <div class="collapse" id="aboutCollapse">
                 <div class="jumbotron jumbotron-fluid mb-0">
-                    <p class="lead">In my 3 years of making games using Unity3D, I did game jams: week-long trash games, and other not-so trashy, fully-fledge games you see below. I also joined a couple of indie studios helping them with their respective games.</p>
-                    <p class="lead">Now I'm enjoying working on a Spring Boot project. And has this crazy idea of making this static website in a LinkedIn style, so others can sign up too. Too crazy right?</p>
-                    <p class="lead">I'm also doing an animedb website, like MyAnimeList. So stay tuned for it! In the future, I would like to combine the things I've learned in making games and what I'm currently learning in the backend.</p>
-                    <p class="lead">And lastly, you could actually switch to Japanese with this button: 日本語</p>
+                    <p id="aboutParagraph01Text" class="lead">In my 3 years of making games using Unity3D, I did game jams: week-long trash games, and other not-so trashy, fully-fledge games you see below. I also joined a couple of indie studios helping them with their respective games.</p>
+                    <p id="aboutParagraph02Text" class="lead">Now I'm enjoying working on a Spring Boot project. And has this crazy idea of making this static website in a LinkedIn style, so others can sign up too. Too crazy right?</p>
+                    <p id="aboutParagraph03Text" class="lead">I'm also doing an animedb website, like MyAnimeList. So stay tuned for it! In the future, I would like to combine the things I've learned in making games and what I'm currently learning in the backend.</p>
+                    <p id="aboutParagraph04Text" class="lead">And lastly, you could actually switch to Japanese with this button: 日本語</p>
                 </div>
                 <div class="d-flex justify-content-end">
                   <a data-toggle="collapse" href="#aboutCollapse" aria-controls="aboutCollapse" class="text-muted mr-2">Close</a>
@@ -62,7 +62,7 @@
                 type="button" class="btn btn-secondary mx-1">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/></svg>
               </a>
-              <button type="button" class="btn btn-secondary mx-1 rounded-0">日本語</button>
+              <button id="toggleLanguageButton" type="button" class="btn btn-secondary mx-1 rounded-0" onclick="toggleLanguage()">日本語</button>
             </div>
         </div>
 
@@ -78,7 +78,7 @@
           <div class="card rounded-0 my-5">
             <div class="card-body">
               <h5 class="card-title">The Thief</h5>
-              <p class="card-text lead">Story revolves around the thief trapped in a dungeon looting for coins. Explore your way and unravel the lies deep inside the dungeon.</p>
+              <p id="project01DescriptionText" class="card-text lead">Play as the Thief, and sneak into the dungeon filled with hidden and fake traps in this platformer adventure game available in Windows and Web.</p>
               <div class="d-flex justify-content-end">
                 <a data-toggle="collapse" href="#theThiefCollapse" aria-controls="theThiefCollapse" class="text-muted">Read more...</a>
               </div>
@@ -134,7 +134,7 @@
           <div class="card rounded-0 my-5">
             <div class="card-body">
               <h5 class="card-title">King & Queen</h5>
-              <p class="card-text lead">A puzzling love story of a King and a Queen unable to reach each other. Help them by solving different kinds of puzzles in every level, and unlocking their ending.</p>
+              <p id="project02DescriptionText" class="card-text lead">Play in solo or duo, and help King and Queen solve various puzzles in this heartwarming puzzle-platformer game available in Windows and Web.</p>
               <div class="d-flex justify-content-end">
               <a data-toggle="collapse" href="#kingAndQueenCollapse" aria-controls="kingAndQueenCollapse" class="justify-content-end text-muted">Read more...</a>
                 
@@ -192,7 +192,7 @@
           <div class="card rounded-0 my-5">
             <div class="card-body">
               <h5 class="card-title">Yggdrasil</h5>
-              <p class="card-text lead">Venture into the depths of the World Tree, Yggdrasil. A complete game playable in your childhood-favorite gameboy device emulators.</p>
+              <p id="project03DescriptionText" class="card-text lead">Play and venture into the depths of the Yggdrasil to slay the beast, in this action-packed turn-based adventure game playable in Gameboy, Gameboy emulators, and Web.</p>
               <div class="d-flex justify-content-end">
               <a data-toggle="collapse" href="#yggdrasilCollapse" aria-controls="yggdrasilCollapse" class="text-muted">Read more...</a>
                 
@@ -272,13 +272,81 @@
         return " 2023 - " + date.getFullYear() + " Emmanuel Pangan";
       }
 
+      const subtitleText = document.getElementById("subtitleText");
+      const aboutParagraphTexts = [
+        document.getElementById("aboutParagraph01Text"),
+        document.getElementById("aboutParagraph02Text"),
+        document.getElementById("aboutParagraph03Text"),
+        document.getElementById("aboutParagraph04Text")
+      ];
+      const project01DescriptionText = document.getElementById("project01DescriptionText");
+      const project02DescriptionText = document.getElementById("project02DescriptionText");
+      const project03DescriptionText = document.getElementById("project03DescriptionText");
 
-      let x = false;
-      
+      const toggleLanguageButton = document.getElementById("toggleLanguageButton");
       function toggleLanguage() {
-        x = !x;
-        console.log(x);
+        if (toggleLanguageButton.innerHTML === "English") {
+          toggleLanguageButton.innerHTML = "日本語";
+          setAllTextsToEng();
+        } else {
+          toggleLanguageButton.innerHTML = "English";
+          setAllTextsToJp();
+        }
       }
+
+      const engTranslation = {
+        subtitle: "Backend developer by day 🌞 game developer by night 🌜",
+        about: [
+            "In my 3 years of making games using Unity3D, I did game jams: week-long trash games, and other not-so trashy, fully-fledge games you see below. I also joined a couple of indie studios helping them with their respective games.",
+            "Now I'm enjoying working on a Spring Boot project. And has this crazy idea of making this static website in a LinkedIn style, so others can sign up too. Too crazy right?",
+            "I'm also doing an animedb website, like MyAnimeList. So stay tuned for it! In the future, I would like to combine the things I've learned in making games and what I'm currently learning in the backend.",
+            "And lastly, you could actually switch to Japanese with this button: 日本語"
+        ],
+        project01Description: "Play as the Thief, and sneak into the dungeon filled with hidden and fake traps in this platformer adventure game available in Windows and Web.",
+        project02Description: "Play in solo or duo, and help King and Queen solve various puzzles in this heartwarming puzzle-platformer game available in Windows and Web.",
+        project03Description: "Play and venture into the depths of the Yggdrasil to slay the beast, in this action-packed turn-based adventure game playable in Gameboy, Gameboy emulators, and Web."
+      };
+
+      function setAllTextsToEng() {
+        subtitleText.innerHTML = engTranslation.subtitle;
+
+        for (let i = 0; i < engTranslation.about.length; ++i) {
+          const text = engTranslation.about[i];
+          aboutParagraphTexts[i].innerHTML = text;
+        }
+
+        project01DescriptionText.innerHTML = engTranslation.project01Description;
+        project02DescriptionText.innerHTML = engTranslation.project02Description;
+        project03DescriptionText.innerHTML = engTranslation.project03Description;
+
+      }
+      
+      const jpTranslation = {
+        subtitle: "昼はBackend Developer 🌞 夕方はGame Developer 🌜",
+        about: [
+            "三年間にUnity3Dを沢山ゲーム作ってみました。一週間くらいのゴミゲームと長い時間くらいの少しゴミじゃないゲーム、って下に見える。 二つのIndie Studio会社も入りました。",
+            "今回はSpring Bootな色々なプロジェクトを楽しくった、作ります。ヤバイなイデアもある、こちのサイトでLinkedInスタイルが作りませんか、どうかなヤバイか。",
+            "今もanimedbのサイト少しMyAnimeListな同じが作ります。楽しんでね!そんな未来にゲームとバックエンドをコンビネーションをする、って私の夢です。",
+            "最後に英語翻訳もある、このボタンで: English"
+        ],
+        project01Description: "プレイヤにThiefでーを使って、ダンジョンの中に沢山偽物トラップで避ける。WindowsとWebがフリープレイです。",
+        project02Description: "プレイヤーにKingとQueenに助けるんだそして色々なパズルの解答を出す、SoloかDuoが出来る。WindowsとWebがフリープレイです。",
+        project03Description: "プレイヤーにYggdrasilの木の下でアドベンチャー始まっているとビーストで戦闘する。GameboyとGameboy emulatorとWebがフリープレイです。"
+      };
+
+      function setAllTextsToJp() {
+        subtitleText.innerHTML = jpTranslation.subtitle;
+
+        for (let i = 0; i < jpTranslation.about.length; ++i) {
+          const text = jpTranslation.about[i];
+          aboutParagraphTexts[i].innerHTML = text;
+        }
+
+        project01DescriptionText.innerHTML = jpTranslation.project01Description;
+        project02DescriptionText.innerHTML = jpTranslation.project02Description;
+        project03DescriptionText.innerHTML = jpTranslation.project03Description;
+      }
+
     </script>
 
     <!-- Optional JavaScript -->
