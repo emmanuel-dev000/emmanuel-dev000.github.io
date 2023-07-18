@@ -13,3 +13,5 @@ A custom website that doesn't need more plugins outside of Bootstrap
 Pretty responsive too for all aspect ratios, including phones and PCs, tested with Chrome's Dev Tools
 
 You can also copy/modify the template if you want to, no need for credits
+
+This website takes the inspiration from [carloswilkes.com](carloswilkes.com)
