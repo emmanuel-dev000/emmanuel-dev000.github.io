@@ -1,8 +1,11 @@
 # emmanuel-dev000.github.io
 
-Personal website built in Bootstrap 4.
+Personal website built in Bootstrap 4
 
-This template is entirely built by me, Emmanuel Pangan.
+Featuring the Japanese translation I added viewable by clicking this button: 日本語
 
-A custom website that doesn't need more plugins outside of Bootstrap.
+Japanese translation might have a lot of errors because I'm still a beginner
 
+And this template is entirely built by me, Emmanuel Pangan
+
+A custom website that doesn't need more plugins outside of Bootstrap
