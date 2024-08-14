@@ -7,6 +7,7 @@ function getCopyrightText() {
   return " 2023 - " + date.getFullYear() + " Emmanuel Pangan";
 }
 
+const headerNameText = document.getElementById("headerNameText");
 const subtitleText = document.getElementById("subtitleText");
 const aboutParagraphTexts = [
   document.getElementById("aboutParagraph01Text"),
@@ -30,11 +31,12 @@ function toggleLanguage() {
 }
 
 const engTranslation = {
+  headerName: "Emmanuel Pangan",
   subtitle: "Backend developer by day 🌞 Game developer by night 🌜",
   about: [
-      "In my 3 years of making games using Unity3D, I did game jams: week-long trash games, and other not-so trashy, fully-fledge games you see below. I also joined a couple of indie studios helping them with their respective games.",
-      "Now I'm enjoying working on a Spring Boot project. And has this crazy idea of making this static website in a LinkedIn style, so others can sign up too. Too crazy right?",
-      "I'm also doing an animedb website, a chat app for anime with a chatbot. So stay tuned for it! In the future, I would like to combine the things I've learned in making games and what I'm currently learning in the backend.",
+      "🌏 Hello, world!",
+      "I'm a Full Stack Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Godot and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills. Additionally, I'm passionate on learning Japanese with my level currently at N5, and the journey has been incredibly rewarding so far!",
+      "I'm always looking for new people to connect with! 👋",
       "And lastly, you could actually switch to Japanese with this button: 日本語"
   ],
   project01Description: "Play as the Thief, and sneak into the dungeon filled with hidden and fake traps in this platformer adventure game available in Windows and Web.",
@@ -43,6 +45,7 @@ const engTranslation = {
 };
 
 function setAllTextsToEng() {
+  headerNameText.innerHTML = engTranslation.headerName;
   subtitleText.innerHTML = engTranslation.subtitle;
 
   for (let i = 0; i < engTranslation.about.length; ++i) {
@@ -57,12 +60,13 @@ function setAllTextsToEng() {
 }
 
 const jpTranslation = {
+  headerName: "パンガン エマニュエル",
   subtitle: "「朝はバックエンド 🌞 夕はゲーム 🌜」私の開発のルーティーンです。",
   about: [
-      "三年間にUnity3Dを沢山ゲーム作ってました。一週間くらいのゴミゲームと長い時間くらいの少しゴミじゃないゲーム、って下に見える。 二つのIndie Studio会社も入りました。",
-      "今回はSpring Bootな色々なプロジェクトを楽しくった、作ります。ヤバイなイデアもある、こちのサイトでLinkedInスタイルが作りませんか、どうかなヤバイか。",
-      "今もanimedbのサイトはchatbotアプリのアニメよりwith chatbotが作ります。楽しんでね!そんな未来にゲームとバックエンドをコンビネーションをする、って私の夢です。",
-      "最後に英語翻訳もある、このボタンで: English"
+      "🌏　ハローワルド！",
+      "ソフトウェア開発者としてC＃、ASP.Net、とAngularを毎昼やっております。そして、毎晩はGodotとゲームの開発もします。もっと習ってのためにもAzureとクラウドを勉強しています。と、今も日本語能力試験やっていますがN5中レベルです。",
+      "新しい出会いに仕事コネクトを嬉しいです。👋",
+      "最後に英語翻訳もあります、このボタンです: English。"
   ],
   project01Description: "プレイヤにThiefでーを使って、ダンジョンの中に沢山偽物トラップで避ける。WindowsとWebがフリープレイです。",
   project02Description: "プレイヤーにKingとQueenに助けるんだそして色々なパズルの解答を出す、SoloかDuoが出来る。WindowsとWebがフリープレイです。",
@@ -70,6 +74,7 @@ const jpTranslation = {
 };
 
 function setAllTextsToJp() {
+  headerNameText.innerHTML = jpTranslation.headerName;
   subtitleText.innerHTML = jpTranslation.subtitle;
 
   for (let i = 0; i < jpTranslation.about.length; ++i) {
@@ -96,6 +101,6 @@ function showJumboReadMore() {
     if (jumboReadMore === null) {
         return;
     }
-    
+
     jumboReadMore.style.visibility = "visible";
 }

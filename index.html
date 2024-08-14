@@ -20,30 +20,30 @@
           <!-- JUMBOTRON -->
           <div class="jumbotron jumbotron-fluid ">
             <div class="container">
-              <h1 class="display-3">Emmanuel Pangan</h1>
+              <h1 id="headerNameText" class="display-3">Emmanuel Pangan</h1>
               <p id="subtitleText" class="lead">Backend developer by day 🌞 Game developer by night 🌜</p>
               <div class="d-flex justify-content-end">
-                <a data-toggle="collapse" href="#aboutCollapse" aria-controls="aboutCollapse" class="text-muted mr-2">Read more...</a>
+                <a onclick="hideJumboReadMore()"  id="jumboReadMore" data-toggle="collapse" href="#aboutCollapse" aria-controls="aboutCollapse" class="text-muted mr-2">Read more...</a>
               </div>
 
               <!-- ABOUT -->
               <div class="collapse" id="aboutCollapse">
                 <div class="jumbotron jumbotron-fluid mb-0">
-                  <div>
+                  <div style="margin-bottom: 3%;">
                     <iframe width="100%" height="500" src="https://www.youtube.com/embed/9jgHInevx-Y"></iframe>
                   </div>
-                  <p id="aboutParagraph01Text" class="lead">In my 3 years of making games using Unity3D, I did game jams: week-long trash games, and other not-so trashy, fully-fledge games you see below. I also joined a couple of indie studios helping them with their respective games.</p>
-                  <p id="aboutParagraph02Text" class="lead">Now I'm enjoying working on a Spring Boot project. And has this crazy idea of making this static website in a LinkedIn style, so others can sign up too. Too crazy right?</p>
-                  <p id="aboutParagraph03Text" class="lead">I'm also doing an animedb website, a chat app for anime with a chatbot. So stay tuned for it! In the future, I would like to combine the things I've learned in making games and what I'm currently learning in the backend.</p>
+                  <p id="aboutParagraph01Text" class="lead">🌏 Hello, world!</p>
+                  <p id="aboutParagraph02Text" class="lead">I'm a Full Stack Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Godot and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills. Additionally, I'm passionate on learning Japanese with my level currently at N5, and the journey has been incredibly rewarding so far!</p>
+                  <p id="aboutParagraph03Text" class="lead">I'm always looking for new people to connect with! 👋 </p>
                   <p id="aboutParagraph04Text" class="lead">And lastly, you could actually switch to Japanese with this button: 日本語</p>
                 </div>
                 <div class="d-flex justify-content-end">
-                  <a data-toggle="collapse" href="#aboutCollapse" aria-controls="aboutCollapse" class="text-muted mr-2">Close</a>
+                  <a onclick="showJumboReadMore()" id="#closeButton" data-toggle="collapse" href="#aboutCollapse" aria-controls="aboutCollapse" class="text-muted mr-2">Close</a>
                 </div>
               </div>
 
               <!-- LINKS -->
-              <div class="d-flex justify-content-center" style="margin-top: 10%;">
+              <div class="d-flex justify-content-center" style="margin-top: 3%;">
                 <div class="btn-group btn-group-lg" role="group">
                   <a href="mailto:emmanuelpanganwork@gmail.com" target="_blank"
                     type="button" class="btn btn-secondary mx-1 rounded-0">
@@ -261,96 +261,9 @@
           </div>
         </div>
       </footer>
-      
     </div>
 
-    <script>
-
-      const datetimeText = document.getElementById("datetimeText");
-      datetimeText.textContent += getCopyrightText();
-
-      function getCopyrightText() {
-        var date = new Date();
-        return " 2023 - " + date.getFullYear() + " Emmanuel Pangan";
-      }
-
-      const subtitleText = document.getElementById("subtitleText");
-      const aboutParagraphTexts = [
-        document.getElementById("aboutParagraph01Text"),
-        document.getElementById("aboutParagraph02Text"),
-        document.getElementById("aboutParagraph03Text"),
-        document.getElementById("aboutParagraph04Text")
-      ];
-      const project01DescriptionText = document.getElementById("project01DescriptionText");
-      const project02DescriptionText = document.getElementById("project02DescriptionText");
-      const project03DescriptionText = document.getElementById("project03DescriptionText");
-
-      const toggleLanguageButton = document.getElementById("toggleLanguageButton");
-      function toggleLanguage() {
-        if (toggleLanguageButton.innerHTML === "English") {
-          toggleLanguageButton.innerHTML = "日本語";
-          setAllTextsToEng();
-        } else {
-          toggleLanguageButton.innerHTML = "English";
-          setAllTextsToJp();
-        }
-      }
-
-      const engTranslation = {
-        subtitle: "Backend developer by day 🌞 Game developer by night 🌜",
-        about: [
-            "In my 3 years of making games using Unity3D, I did game jams: week-long trash games, and other not-so trashy, fully-fledge games you see below. I also joined a couple of indie studios helping them with their respective games.",
-            "Now I'm enjoying working on a Spring Boot project. And has this crazy idea of making this static website in a LinkedIn style, so others can sign up too. Too crazy right?",
-            "I'm also doing an animedb website, a chat app for anime with a chatbot. So stay tuned for it! In the future, I would like to combine the things I've learned in making games and what I'm currently learning in the backend.",
-            "And lastly, you could actually switch to Japanese with this button: 日本語"
-        ],
-        project01Description: "Play as the Thief, and sneak into the dungeon filled with hidden and fake traps in this platformer adventure game available in Windows and Web.",
-        project02Description: "Play in solo or duo, and help King and Queen solve various puzzles in this heartwarming puzzle-platformer game available in Windows and Web.",
-        project03Description: "Play and venture into the depths of the Yggdrasil to slay the beast, in this action-packed turn-based adventure game playable in Gameboy, Gameboy emulators, and Web."
-      };
-
-      function setAllTextsToEng() {
-        subtitleText.innerHTML = engTranslation.subtitle;
-
-        for (let i = 0; i < engTranslation.about.length; ++i) {
-          const text = engTranslation.about[i];
-          aboutParagraphTexts[i].innerHTML = text;
-        }
-
-        project01DescriptionText.innerHTML = engTranslation.project01Description;
-        project02DescriptionText.innerHTML = engTranslation.project02Description;
-        project03DescriptionText.innerHTML = engTranslation.project03Description;
-
-      }
-      
-      const jpTranslation = {
-        subtitle: "「朝はバックエンド 🌞 夕はゲーム 🌜」私の開発のルーティーンです。",
-        about: [
-            "三年間にUnity3Dを沢山ゲーム作ってました。一週間くらいのゴミゲームと長い時間くらいの少しゴミじゃないゲーム、って下に見える。 二つのIndie Studio会社も入りました。",
-            "今回はSpring Bootな色々なプロジェクトを楽しくった、作ります。ヤバイなイデアもある、こちのサイトでLinkedInスタイルが作りませんか、どうかなヤバイか。",
-            "今もanimedbのサイトはchatbotアプリのアニメよりwith chatbotが作ります。楽しんでね!そんな未来にゲームとバックエンドをコンビネーションをする、って私の夢です。",
-            "最後に英語翻訳もある、このボタンで: English"
-        ],
-        project01Description: "プレイヤにThiefでーを使って、ダンジョンの中に沢山偽物トラップで避ける。WindowsとWebがフリープレイです。",
-        project02Description: "プレイヤーにKingとQueenに助けるんだそして色々なパズルの解答を出す、SoloかDuoが出来る。WindowsとWebがフリープレイです。",
-        project03Description: "プレイヤーにYggdrasilの木の下でアドベンチャー始まっているとビーストで戦闘する。GameboyとGameboy emulatorとWebがフリープレイです。"
-      };
-
-      function setAllTextsToJp() {
-        subtitleText.innerHTML = jpTranslation.subtitle;
-
-        for (let i = 0; i < jpTranslation.about.length; ++i) {
-          const text = jpTranslation.about[i];
-          aboutParagraphTexts[i].innerHTML = text;
-        }
-
-        project01DescriptionText.innerHTML = jpTranslation.project01Description;
-        project02DescriptionText.innerHTML = jpTranslation.project02Description;
-        project03DescriptionText.innerHTML = jpTranslation.project03Description;
-      }
-
-    </script>
-
+    <script src="app.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
