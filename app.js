@@ -81,3 +81,21 @@ function setAllTextsToJp() {
   project02DescriptionText.innerHTML = jpTranslation.project02Description;
   project03DescriptionText.innerHTML = jpTranslation.project03Description;
 }
+
+function hideJumboReadMore() {
+    const jumboReadMore = document.getElementById("jumboReadMore");
+    if (jumboReadMore === null) {
+        return;
+    }
+
+    jumboReadMore.style.visibility = "hidden";
+}
+
+function showJumboReadMore() {
+    const jumboReadMore = document.getElementById("jumboReadMore");
+    if (jumboReadMore === null) {
+        return;
+    }
+    
+    jumboReadMore.style.visibility = "visible";
+}
