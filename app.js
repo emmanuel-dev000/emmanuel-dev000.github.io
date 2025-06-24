@@ -32,10 +32,10 @@ function toggleLanguage() {
 
 const engTranslation = {
   headerName: "Emmanuel Pangan",
-  subtitle: "Backend developer by day 🌞 Game developer by night 🌜",
+  subtitle: "Software Developer by day 🌞 Game Developer by night 🌜",
   about: [
       "🌏 Hello, world!",
-      "I'm a Full Stack Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Godot and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills. Additionally, I'm passionate on learning Japanese with my level currently at N5, and the journey has been incredibly rewarding so far!",
+      "I'm a Software Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Godot and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills. Additionally, I'm passionate on learning Japanese with my level currently at N4, and the journey has been incredibly rewarding so far!",
       "I'm always looking for new people to connect with! 👋",
       "And lastly, you could actually switch to Japanese with this button: 日本語"
   ],
