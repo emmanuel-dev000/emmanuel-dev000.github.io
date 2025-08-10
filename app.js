@@ -18,6 +18,7 @@ const aboutParagraphTexts = [
 const project01DescriptionText = document.getElementById("project01DescriptionText");
 const project02DescriptionText = document.getElementById("project02DescriptionText");
 const project03DescriptionText = document.getElementById("project03DescriptionText");
+const project04DescriptionText = document.getElementById("project04DescriptionText");
 
 const toggleLanguageButton = document.getElementById("toggleLanguageButton");
 function toggleLanguage() {
@@ -41,7 +42,8 @@ const engTranslation = {
   ],
   project01Description: "Play as the Thief, and sneak into the dungeon filled with hidden and fake traps in this platformer adventure game available in Windows and Web.",
   project02Description: "Play in solo or duo, and help King and Queen solve various puzzles in this heartwarming puzzle-platformer game available in Windows and Web.",
-  project03Description: "Play and venture into the depths of the Yggdrasil to slay the beast, in this action-packed turn-based adventure game playable in Gameboy, Gameboy emulators, and Web."
+  project03Description: "Play and venture into the depths of the Yggdrasil to slay the beast, in this action-packed turn-based adventure game playable in Gameboy, Gameboy emulators, and Web.",
+  project04Description: "The royal couple: King and Queen are back again in their romantic adventure! Playable in Web and Windows. Note: The current version is still in demo."
 };
 
 function setAllTextsToEng() {
@@ -56,6 +58,7 @@ function setAllTextsToEng() {
   project01DescriptionText.innerHTML = engTranslation.project01Description;
   project02DescriptionText.innerHTML = engTranslation.project02Description;
   project03DescriptionText.innerHTML = engTranslation.project03Description;
+  project04DescriptionText.innerHTML = engTranslation.project04Description;
 
 }
 
@@ -70,7 +73,8 @@ const jpTranslation = {
   ],
   project01Description: "プレイヤにThiefでーを使って、ダンジョンの中に沢山偽物トラップで避ける。WindowsとWebがフリープレイです。",
   project02Description: "プレイヤーにKingとQueenに助けるんだそして色々なパズルの解答を出す、SoloかDuoが出来る。WindowsとWebがフリープレイです。",
-  project03Description: "プレイヤーにYggdrasilの木の下でアドベンチャー始まっているとビーストで戦闘する。GameboyとGameboy emulatorとWebがフリープレイです。"
+  project03Description: "プレイヤーにYggdrasilの木の下でアドベンチャー始まっているとビーストで戦闘する。GameboyとGameboy emulatorとWebがフリープレイです。",
+  project04Description: "ザローヤルファミリー：KingとQueenが戻りました！一緒に彼らのロマンティックアドベンチャーに助らるか？WebとWindowsでプレイ出来る。なお、今のバージョンアップデートはまだDemoです。"
 };
 
 function setAllTextsToJp() {
@@ -85,6 +89,7 @@ function setAllTextsToJp() {
   project01DescriptionText.innerHTML = jpTranslation.project01Description;
   project02DescriptionText.innerHTML = jpTranslation.project02Description;
   project03DescriptionText.innerHTML = jpTranslation.project03Description;
+  project04DescriptionText.innerHTML = jpTranslation.project04Description;
 }
 
 function hideJumboReadMore() {
