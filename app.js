@@ -36,8 +36,8 @@ const engTranslation = {
   subtitle: "Software Developer by day 🌞 Game Developer by night 🌜",
   about: [
       "🌏 Hello, world!",
-      "I'm a Software Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Unity3D and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills. Additionally, I'm passionate on learning Japanese with my level currently at N4, and the journey has been incredibly rewarding so far!",
-      "I'm always looking for new people to connect with! 👋",
+      "I'm a Software Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Unity3D and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills.",
+      "I'm also passionate in learning Japanese with my level currently at N4, and the journey has been incredibly rewarding so far!",
       "And lastly, you could actually switch to Japanese with this button: 日本語"
   ],
   project01Description: "Play as the Thief, and sneak into the dungeon filled with hidden and fake traps in this platformer adventure game available in Windows and Web.",
@@ -63,13 +63,13 @@ function setAllTextsToEng() {
 }
 
 const jpTranslation = {
-  headerName: "パンガン エマニュエル",
-  subtitle: "「朝はバックエンド 🌞 夕はゲーム 🌜」私の開発のルーティーンです。",
+  headerName: "パンガン•エマニュエル",
+  subtitle: "「昼はソフトウェアデヴェロッパー 🌞 夕はゲームクリエイター 🌜」",
   about: [
       "🌏　ハローワルド！",
-      "ソフトウェア開発者としてC＃、ASP.Net、とAngularを毎昼やっております。そして、毎晩はGodotとゲームの開発もします。もっと習ってのためにもAzureとクラウドを勉強しています。と、今も日本語能力試験やっていますがN5中レベルです。",
-      "新しい出会いに仕事コネクトを嬉しいです。👋",
-      "最後に英語翻訳もあります、このボタンです: English。"
+      "ソフトウェア開発者としてC＃、ASP.Net、とAngularを毎昼やっております。そして、毎晩はUnity3Dとゲームの開発もします。もっと習うためにもAzureとクラウドを勉強しています。",
+      "上に、日本語能力試験もします、N4レベルです。",
+      "ちなみに英語翻訳もあります、このボタンで: English"
   ],
   project01Description: "プレイヤにThiefでーを使って、ダンジョンの中に沢山偽物トラップで避ける。WindowsとWebがフリープレイです。",
   project02Description: "プレイヤーにKingとQueenに助けるんだそして色々なパズルの解答を出す、SoloかDuoが出来る。WindowsとWebがフリープレイです。",
